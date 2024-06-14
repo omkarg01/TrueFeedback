@@ -59,8 +59,8 @@ export default function SendMessage() {
     setIsLoading(true);
     try {
       const response = await axios.post<ApiResponse>("/api/send-message", {
-        ...data,
         username,
+        ...data,
       });
 
       toast({
