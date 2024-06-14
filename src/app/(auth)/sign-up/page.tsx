@@ -114,6 +114,7 @@ export default function SignUpForm() {
                 <FormItem>
                   <FormLabel>Username</FormLabel>
                   <Input
+                    placeholder="username"
                     {...field}
                     onChange={(e) => {
                       field.onChange(e);
@@ -142,7 +143,7 @@ export default function SignUpForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Email</FormLabel>
-                  <Input {...field} name="email" />
+                  <Input {...field} name="email" placeholder="email" />
                   <p className="text-muted text-black text-sm">
                     We will send you a verification code
                   </p>

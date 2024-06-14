@@ -50,8 +50,9 @@ export default function VerifyAccount() {
 
       toast({
         title: "Verification Failed",
-        description: axiosError.response?.data.message ??
-        'An error occurred. Please try again.',
+        description:
+          axiosError.response?.data.message ??
+          "An error occurred. Please try again.",
         variant: "destructive",
       });
     }
@@ -74,7 +75,7 @@ export default function VerifyAccount() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Verification Code</FormLabel>
-                  <Input {...field} />
+                  <Input {...field} placeholder="code" />
                   <FormMessage />
                 </FormItem>
               )}
